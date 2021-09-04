@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blackjack</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <h1 class="header__title">Blackjack</h1>
+    </header>
+
+    <main>
+      <section class="row mt-2">
+        <div class="col text-center">
+          <button id="startBtn" class="btn btn-danger">Nuevo juego</button>
+          <button id="hitBtn" class="btn btn-primary">Otra carta</button>
+          <button id="stopBtn" class="btn btn-primary">Plantarse</button>
+        </div>
+      </section>
+
+      <section class="row container">
+        <div class="col">
+          <h2 id="playerScore">Gamer 1 - Puntuación: <span>0</span></h2>
+          <div id="player-cards">
+            <!-- <img class="card" src="./assets/cards/10C.png" alt="10C" /> -->
+          </div>
+        </div>
+      </section>
+
+      <section class="row container mt-2">
+        <div class="col">
+          <h2 id="computerScore">Gamer 1 - Puntuación: <span>0</span></h2>
+          <div id="computer-cards">
+            <!-- <img class="card" src="./assets/cards/10C.png" alt="10C" /> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./assets/js/underscore-min.js"></script>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
